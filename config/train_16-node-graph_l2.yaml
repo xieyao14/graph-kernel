@@ -9,7 +9,7 @@ n_basis_loc: !!int 3
 use_seq: !!int 500
 loss: !!str "cont_l2_loss"
 lr: !!float 0.1 
-epoch: !!int 1000
+epoch: !!int 500
 batch_size: !!int 64
 device: !!str "cpu"
 seed: !!int 100
