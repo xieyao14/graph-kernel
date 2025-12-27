@@ -1,0 +1,8 @@
+numpy>=1.21.0
+matplotlib>=3.5.0
+arrow>=1.2.0
+tqdm>=4.64.0
+networkx>=2.8.0
+PyYAML>=6.0
+torch>=1.12.0
+torch_geometric>=2.3.0
