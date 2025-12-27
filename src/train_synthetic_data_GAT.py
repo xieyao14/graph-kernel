@@ -92,7 +92,14 @@ train_llks, test_llks, test_maes, test_mres, losses, wall_time, lam_mins, ts, bs
 
 if save_model:
     np.save("results/saved_models/%s/losses.npy" % model_name, losses)
-    np.save("results/saved_models/%s/metrics.npy" % model_name, [train_llks, test_llks, test_maes, test_mres])
+    np.save(
+    f"results/saved_models/{model_name}/metrics.npy",
+    {
+        "train_llks": train_llks,
+        "test_llks": test_llks,
+        "test_maes": test_maes,
+        "test_mres": test_mres,
+    },
     np.save("results/saved_models/%s/wall_times.npy" % model_name, wall_time)
     if config["penalty"]:
         np.save("results/saved_models/%s/lam_mins.npy" % model_name, [lam_mins, ts, bs])
