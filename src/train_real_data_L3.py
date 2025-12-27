@@ -97,7 +97,7 @@ plot_points   = test_data[0]
 
 # training
 save_model = True
-train_llks, test_llks, test_maes, test_mres, losses, wall_time, lam_mins, ts, bs = train(init_model, trg_model, config, train_data, test_data, eval_points=eval_points, plot_points=plot_points, plot_ngrid=100, modelname=model_name, save_model=save_model, save_path=save_path, load_iter=500)
+train_llks, test_llks, test_maes, test_mres, losses, wall_time, lam_mins, ts, bs = train(init_model, trg_model, config, train_data, test_data, eval_points=eval_points, plot_points=plot_points, plot_ngrid=100, modelname=model_name, save_model=save_model, save_path=save_path, load_iter=1000)
 
 if save_model:
     np.save("results/saved_models/%s/losses.npy" % model_name, losses)
@@ -108,7 +108,8 @@ if save_model:
         "test_llks": test_llks,
         "test_maes": test_maes,
         "test_mres": test_mres,
-    },
+    }
+    )
     np.save("results/saved_models/%s/wall_times.npy" % model_name, wall_time)
     if config["penalty"]:
         np.save("results/saved_models/%s/lam_mins.npy" % model_name, [lam_mins, ts, bs])
