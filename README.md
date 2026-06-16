@@ -2,6 +2,8 @@
 
 This repository contains the implementation of the Spatio-Temporal Point Process model with deep graph kernels. The code implements a deep learning framework for modeling event dynamics on graph structures using various graph kernel bases (ChebNet, L3Net, GAT) and temporal point processes.
 
+Code developed by Zheng Dong and Matthew Repasky. 
+
 ## Directory Structure
 
 Ensure your directory is organized as follows before running the code:
