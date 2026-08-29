@@ -121,3 +121,9 @@ After training, results are saved to the results/ directory:
 - saved_models/: Contains model checkpoints (.pth), loss logs (losses.npy), and evaluation metrics (metrics.npy).
 - Images: If visualization is enabled, plots of intensity evolution are saved here.
 - Sampled Data: out-of-sample data generated from the learned model (model_generated_data.npy).
+
+## Reference
+If using the code, please cite the paper  
+[https://arxiv.org/abs/2306.11313](Deep Graph Kernel Point Processes over Networks).  
+Zheng Dong, Matthew Repasky, Xiuyuan Cheng, Yao Xie.
+Journal of Computational and Graphical Statistics (2026): 1-41.
