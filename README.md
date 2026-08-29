@@ -124,6 +124,6 @@ After training, results are saved to the results/ directory:
 
 ## Reference
 If using the code, please cite the paper  
-[https://arxiv.org/abs/2306.11313](Deep Graph Kernel Point Processes over Networks).  
-Zheng Dong, Matthew Repasky, Xiuyuan Cheng, Yao Xie.
+[https://arxiv.org/abs/2306.11313] (Deep Graph Kernel Point Processes over Networks).   
+Zheng Dong, Matthew Repasky, Xiuyuan Cheng, Yao Xie.  
 Journal of Computational and Graphical Statistics (2026): 1-41.
